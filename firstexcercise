@@ -1,0 +1,26 @@
+<library>
+	<catalogue category="Technical">
+		<book>
+			<title>Engineering mechanics</title>
+			<ISBN>0132790262 9780132790260</ISBN>
+			<author>Archie Higdon</author>
+		</book>
+		<book>
+			<title>Beginning programming for dummies</title>
+			<ISBN>9781119173809 1119173809</ISBN>
+			<author>Wally Wang</author>
+		</book>
+	</catalogue>
+	<catalogue category="Cookery">
+		<book>
+			<title>The world of Happy Pear</title>
+			<ISBN>9780241975534 0241975530</ISBN>
+			<author>Stephen Flynn and Alistair Richardson</author>
+		</book>
+		<book>
+			<title>BOSH!</title>
+			<ISBN>9780062820686 0062820680</ISBN>
+			<author>Henry Firth and Ian Theasby</author>
+		</book>	
+	</catalogue>
+</library>
