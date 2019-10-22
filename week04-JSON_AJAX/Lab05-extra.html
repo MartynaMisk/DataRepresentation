@@ -10,15 +10,16 @@
     <script>
         function readJSON(){
             $.ajax({
-                "url": "https://api.coindesk.com/v1/bpi/currentprice.json",
+                "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR",
                 "method":"GET",
                 "data":"",
                 "dataType": "JSON",
                 "success":function(results){
+                    //console.log(results);
                     //console.log(JSON.stringify(results));
-                    var rate = results.bpi.USD.rate;
+                    var rate = results.USD;
                     //var rate = results.bpi.EUR.rate;
-                    //console.log(rate);
+                    console.log(rate);
                     document.getElementById("output").innerText= rate;
                 },
                 "error":function(xhr,status,error){
