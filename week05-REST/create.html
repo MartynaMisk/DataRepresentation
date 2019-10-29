@@ -3,7 +3,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <body>
         hi there
-        <button onclick="updateCar()">go</button>
+        <button onclick="createCar()">go</button>
         <div id="output"></div>
         <table id="carsTable">
             <tr>
@@ -16,14 +16,14 @@
             var car = {"reg":"12 D 1234","make":"Fiat","model":"Punto","price":3000}
             console.log(JSON.stringify(car));
             $.ajax({
-                "url": "http://127.0.0.1:5000/cars",
+                "url": "cars",
                 "method":"POST",
                 "data":JSON.stringify(car),
                 "dataType": "JSON",
                 contentType: "application/json; charset=utf-8",
                 "success":function(result){
-                    console.log(result);
-                    document.getElementById("output").innerText = JSON.stringify(result);
+                    console.log(car);
+                    document.getElementById("output").innerText = JSON.stringify(car);
                     },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
