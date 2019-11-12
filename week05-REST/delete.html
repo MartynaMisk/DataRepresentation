@@ -14,7 +14,7 @@
     <script>
         function deleteCar(){
             $.ajax({
-                url: "http://127.0.0.1:5000/cars"+ encodeURI(car.reg),
+                url: "cars"+ encodeURI(car.reg),
                 method: "DELETE",
                 data:"",
                 dataType:"JSON",
